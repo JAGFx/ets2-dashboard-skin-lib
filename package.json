@@ -1,0 +1,45 @@
+{
+  "name": "ets2-dashboard-skin-lib",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "npx eslint src/**/*.{js,ts} --fix -c tools/.eslintrc.json",
+    "lint:prettier": "npx prettier src/**/*.{js,ts} !dist/**/* --write --config tools/.prettierrc.json",
+    "test": "npm run test:unit",
+    "test:unit": "npx jest src -c tools/.jestrc.ts",
+    "test:coverage": "npx jest src --coverage -c tools/.jestrc.ts",
+    "test:coverage:preview": "npm run test:coverage && npx http-server coverage/lcov-report/ -p 8002",
+    "ci": "npm run lint && npm run test",
+    "build": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unicor-p/ets2-dashboard-skin-lib.git"
+  },
+  "author": "Emmanuel SMITH <hey@emmanuel-smith.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Unicor-p/ets2-dashboard-skin-lib/issues"
+  },
+  "homepage": "https://github.com/Unicor-p/ets2-dashboard-skin-lib#readme",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/jest": "^29.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "ejs": "^3.1.9",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "http-server": "^14.1.1",
+    "jest": "^29.5.0",
+    "jest-json-schema": "^6.1.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.0",
+    "yaml-jest": "^1.2.0"
+  }
+}

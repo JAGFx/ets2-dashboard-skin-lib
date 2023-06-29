@@ -1,0 +1,28 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins" : [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "parser": "@typescript-eslint/parser"
+  },
+  "ignorePatterns": [
+    "node_modules"
+  ],
+  "rules": {
+    "no-console": 1,
+    "no-debugger": 2,
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+    "prettier/prettier": "error"
+  }
+}
