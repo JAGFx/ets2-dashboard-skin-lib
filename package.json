@@ -42,5 +42,9 @@
     "ts-node": "^10.9.1",
     "typescript": "~5.0",
     "yaml-jest": "^1.2.0"
+  },
+  "dependencies": {
+    "@types/luxon": "^3.3.0",
+    "luxon": "^3.3.0"
   }
 }
