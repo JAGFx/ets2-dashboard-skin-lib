@@ -1,17 +1,17 @@
-import { utils } from 'src/isNil/index';
+import { isNil } from './index';
 
 describe('isNil', () => {
   test('true', () => {
-    expect(utils.isNil(undefined)).toBe(true);
-    expect(utils.isNil(null)).toBe(true);
+    expect(isNil(undefined)).toBe(true);
+    expect(isNil(null)).toBe(true);
   });
 
   test('false', () => {
-    expect(utils.isNil('')).toBe(false);
-    expect(utils.isNil([])).toBe(false);
-    expect(utils.isNil({})).toBe(false);
-    expect(utils.isNil(25)).toBe(false);
-    expect(utils.isNil(() => undefined)).toBe(false);
-    expect(utils.isNil(Symbol('my symbol'))).toBe(false);
+    expect(isNil('')).toBe(false);
+    expect(isNil([])).toBe(false);
+    expect(isNil({})).toBe(false);
+    expect(isNil(25)).toBe(false);
+    expect(isNil(() => undefined)).toBe(false);
+    expect(isNil(Symbol('my symbol'))).toBe(false);
   });
 });

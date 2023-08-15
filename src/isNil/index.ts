@@ -1,6 +1,2 @@
-const isNil = (value: unknown): boolean =>
+export const isNil = (value: unknown): boolean =>
   value === undefined || value === null;
-
-export const utils = {
-  isNil
-};

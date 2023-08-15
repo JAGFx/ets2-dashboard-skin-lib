@@ -59,7 +59,6 @@
 		"id": "unit_currency",
 		"value": "EUR"
 	},
-	
 	{
 		"id": "jagfx_elements_right_oilTemperature",
 		"value": true
@@ -136,8 +135,6 @@
 		"id": "jagfx_elements_right_map",
 		"value": false
 	},
-	
-	
 	{
 		"id": "events_truck.refuel",
 		"value": true
@@ -230,8 +227,6 @@
 		"id": "events_game.pause",
 		"value": true
 	},
-	
-	
 	{
 		"id": "maps_elements_eta",
 		"value": true
@@ -284,7 +279,6 @@
 		"id": "maps_general_debug",
 		"value": false
 	},
-	
 	{
 		"id": "scania_default_menu",
 		"value": null

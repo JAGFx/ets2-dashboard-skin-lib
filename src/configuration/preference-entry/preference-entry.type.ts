@@ -49,4 +49,16 @@ export class PreferenceEntry implements PreferenceEntryInterface {
 export class PreferenceEntryCollection extends Map<
   PreferenceEntryId,
   PreferenceEntry
-> {}
+> {
+  static fromArray(
+    preferenceEntries: PreferenceEntry[]
+  ): PreferenceEntryCollection {
+    const collection = new this();
+
+    preferenceEntries.map((preferenceEntry: PreferenceEntry) =>
+      collection.set(preferenceEntry.id, preferenceEntry)
+    );
+
+    return collection;
+  }
+}

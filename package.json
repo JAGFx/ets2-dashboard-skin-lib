@@ -13,7 +13,8 @@
     "test:coverage": "npx jest src --coverage -c tools/.jestrc.ts",
     "test:coverage:preview": "npm run test:coverage && npx http-server coverage/lcov-report/ -p 8002",
     "ci": "npm run lint && npm run test",
-    "build": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+    "build": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json",
+    "dev": "npx ts-node --esm src/index.ts"
   },
   "repository": {
     "type": "git",

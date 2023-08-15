@@ -1,9 +1,9 @@
-dev-env:
+env:
 	@cp tools/.prettierrc.json .prettierrc.json
 	@cp tools/.eslintignore .eslintignore
 	@cp tools/.prettierignore .prettierignore
 
-install: dev-env
+install: dev
 	@npm i
 
 test:
